@@ -4,7 +4,7 @@
 $(document).ready(function () {
   // set vars
   var hourBlock = document.getElementById("block-container");
-  var hourBlockDivs = hourBlock.children;
+  var hourBlockDivs = Array.from(hourBlock.children);
   // set var for current hour of day
   var currHour = dayjs().hour();
 
