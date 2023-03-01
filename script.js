@@ -38,11 +38,13 @@ $(document).ready(function () {
     var id = hourBlockDivs[i].id;
     // to get just the numberic number
     var trimmedId = id.slice(5);
+    var textArea = hourBlockDivs[i].children[1];
 
     if (trimmedId < currHour) {
       hourBlockDivs[i].classList.add("past");
     } else if (trimmedId == currHour) {
       hourBlockDivs[i].classList.add("present");
+      textArea.classList.add("current");
     } else {
       hourBlockDivs[i].classList.add("future");
     }
