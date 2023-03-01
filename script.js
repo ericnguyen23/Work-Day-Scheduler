@@ -63,6 +63,12 @@ $(document).ready(function () {
   }
 
   // TODO: Add code to display the current date in the header of the page.
-  var todaysDate = dayjs().format("dddd, MMMM D YYYY, h:mm a");
-  document.getElementById("currentDay").textContent = todaysDate;
+
+  // update time every second
+  function displayCurrTime() {
+    var todaysDate = dayjs().format("dddd, MMMM D YYYY, h:mm a");
+    document.getElementById("currentDay").textContent = todaysDate;
+  }
+  displayCurrTime();
+  setInterval(displayCurrTime, 1000);
 });
