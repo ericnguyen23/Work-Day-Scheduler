@@ -4,9 +4,8 @@ var hourBlockDivs = Array.from(hourBlock.children);
 var currHour = dayjs().hour();
 var saveBtn = document.querySelectorAll(".saveBtn");
 
-// on click of save button, add to local storage
-for (i of saveBtn) {
-  i.addEventListener("click", function () {
+for (var i = 0; i < saveBtn.length; i++) {
+  saveBtn[i].addEventListener("click", function () {
     var key = this.parentElement.getAttribute("id");
     var value = this.previousElementSibling.value;
     localStorage.setItem(key, value);
