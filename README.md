@@ -1,6 +1,6 @@
 # Work Day Scheduler
 
-This project utilizes JavaScript to allow users to input their specific hourly workday schedule. Data will perist utilizing local storage. 
+This project utilizes JavaScript to allow users to input their specific hourly workday schedule. Data will perist utilizing local storage.
 
 It solves the following acceptance criterias:
 
